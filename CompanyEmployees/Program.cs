@@ -15,8 +15,7 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.AddControllers()
-  .AddApplicationPart(typeof(Presentation.AssemblyReference).Ass
-embly);
+  .AddApplicationPart(typeof(Presintation.AssemblyReference).Assembly);
 
 builder.Services.AddControllers();
 
@@ -31,7 +30,7 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseForwardedHeaders(new ForwardedHeadersOptions
-{
+{   
     ForwardedHeaders = ForwardedHeaders.All
 });
 
